@@ -1,0 +1,26 @@
+<div class="card">
+  <div class="card-header">
+    User Details
+  </div>
+  <div class="card-body">
+    <div *ngIf="user; else noUser">
+      <h5>User Profile ID: {{user.userId}}</h5>
+  
+        <div class="form-group">
+          <label>Username</label>
+          <input type="text" class="form-control" disabled value="{{user.username}}" />
+        </div>
+  
+        <div class="form-group">
+          <label>Password</label>
+          <input type="password" class="form-control" disabled value="{{user.password}}" />
+        </div>
+    </div>
+
+    <ng-template #noUser>
+      <div class="text-danger">
+        Click on Id to view User
+      </div>
+    </ng-template>
+  </div>
+</div>

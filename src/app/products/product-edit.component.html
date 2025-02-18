@@ -1,0 +1,70 @@
+<div class="container">
+  <div class="card">
+    <div class="card-header">
+      {{ pageTitle }}
+    </div>
+    <div class="card-body">
+      <div *ngIf="errorMesssage" class="alert alert-danger">
+        {{ errorMesssage }}
+      </div>
+      <div *ngIf="products.length > 0">
+        <div class="row">
+          <div class="col-12 text-right">
+            <button class="btn btn-outline-secondary" style="width: 80px;" (click)='onBack()'>
+              <i class="fa fa-chevron-left"> Back</i>
+            </button>
+            <button class="btn btn-outline-secondary" style="width: 185px;" (click)='onBackToProducts()'>
+              <i class="fa fa-chevron-left"> Back To Products List</i>
+            </button>
+          </div>
+        </div>
+
+        <div *ngFor="let product of products" class="row fields">
+          <div class="col-12">
+            <div>
+              <label>Product Name:</label>
+              <input class="form-control" [(ngModel)]="product.productName" [readonly]="true" />
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div>
+              <label>Product Description:</label>
+              <textarea class="form-control" [(ngModel)]="product.description" [readonly]="true"></textarea>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div>
+              <label>Product Image:</label>
+              <div *ngIf="product.imageUrl">
+                <img [src]="product.imageUrl" alt="{{ product.productName }}" class="img-fluid" width="100px" />
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div>
+              <label>Release Date:</label>
+              <input class="form-control" [(ngModel)]="product.releaseDate" [readonly]="true" />
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div>
+              <label>Price (INR):</label>
+              <input class="form-control" [(ngModel)]="product.price" [readonly]="true" />
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div>
+              <label>Rating:</label>
+              <star [rating]="product.starRating"></star>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

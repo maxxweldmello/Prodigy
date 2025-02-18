@@ -1,0 +1,23 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 50%;
+}
+
+.card-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fields{
+    padding: 50px;
+}
+
+.btn-outline-secondary{
+    margin: 0 5px;
+}

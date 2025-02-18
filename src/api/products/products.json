@@ -1,0 +1,222 @@
+[
+  {
+    "productId": 29,
+    "productName": "Garden Cart",
+    "productCode": "GDN-0001",
+    "releaseDate": "1 March 2021",
+    "description": "15-gallon capacity rolling garden cart",
+    "price": 32.99,
+    "starRating": 3.2,
+    "imageUrl": "assets/images/garden-cart.png",
+    "quantity": 0
+  },
+  {
+    "productId": 32,
+    "productName": "Hammer",
+    "productCode": "TBX-0002",
+    "releaseDate": "21 May 2021",
+    "description": "Curved claw steel hammer",
+    "price": 8.9,
+    "starRating": 4.2,
+    "imageUrl": "assets/images/hammer.png",
+    "quantity": 0
+  },
+  {
+    "productId": 13,
+    "productName": "Lawn Mower",
+    "productCode": "LMR-0003",
+    "releaseDate": "12 June 2021",
+    "description": "Self-propelled 21-inch lawn mower",
+    "price": 249.99,
+    "starRating": 4.5,
+    "imageUrl": "assets/images/lawn-mower.png",
+    "quantity": 0
+  },
+  {
+    "productId": 24,
+    "productName": "Garden Shovel",
+    "productCode": "GDS-0004",
+    "releaseDate": "25 July 2021",
+    "description": "Ergonomic handle steel garden shovel",
+    "price": 14.5,
+    "starRating": 4.0,
+    "imageUrl": "assets/images/garden-shovel.png",
+    "quantity": 0
+  },
+  {
+    "productId": 56,
+    "productName": "Pressure Washer",
+    "productCode": "PW-0005",
+    "releaseDate": "5 September 2021",
+    "description": "1800 PSI electric pressure washer",
+    "price": 129.99,
+    "starRating": 4.7,
+    "imageUrl": "assets/images/pressure-washer.png",
+    "quantity": 0
+  },
+  {
+    "productId": 43,
+    "productName": "Wheelbarrow",
+    "productCode": "WBB-0006",
+    "releaseDate": "10 February 2022",
+    "description": "Heavy-duty 6 cubic feet wheelbarrow",
+    "price": 89.99,
+    "starRating": 4.3,
+    "imageUrl": "assets/images/wheelbarrow.png",
+    "quantity": 0
+  },
+  {
+    "productId": 72,
+    "productName": "Garden Hose",
+    "productCode": "GH-0007",
+    "releaseDate": "3 October 2021",
+    "description": "Expandable garden hose with nozzle",
+    "price": 22.99,
+    "starRating": 4.6,
+    "imageUrl": "assets/images/garden-hose.png",
+    "quantity": 0
+  },
+  {
+    "productId": 29,
+    "productName": "Leaf Blower",
+    "productCode": "LB-0008",
+    "releaseDate": "15 March 2022",
+    "description": "Cordless electric leaf blower with turbo boost",
+    "price": 79.99,
+    "starRating": 4.4,
+    "imageUrl": "assets/images/garden-cart.png",
+    "quantity": 0
+  },
+  {
+    "productId": 84,
+    "productName": "Electric Chainsaw",
+    "productCode": "ECS-0009",
+    "releaseDate": "8 April 2022",
+    "description": "12-inch electric chainsaw with automatic oiling system",
+    "price": 99.99,
+    "starRating": 4.1,
+    "imageUrl": "assets/images/hammer.png",
+    "quantity": 0
+  },
+  {
+    "productId": 93,
+    "productName": "Garden Rake",
+    "productCode": "GR-0010",
+    "releaseDate": "22 May 2022",
+    "description": "Adjustable steel tines garden rake",
+    "price": 19.99,
+    "starRating": 4.3,
+    "imageUrl": "assets/images/lawn-mower.png",
+    "quantity": 0
+  },
+  {
+    "productId": 101,
+    "productName": "Hedge Trimmer",
+    "productCode": "HT-0011",
+    "releaseDate": "5 June 2022",
+    "description": "Cordless hedge trimmer with dual-action blade",
+    "price": 59.99,
+    "starRating": 4.6,
+    "imageUrl": "assets/images/garden-shovel.png",
+    "quantity": 0
+  },
+  {
+    "productId": 93,
+    "productName": "Soil Moisture Meter",
+    "productCode": "SMM-0012",
+    "releaseDate": "30 July 2022",
+    "description": "3-in-1 soil moisture, light, and pH tester",
+    "price": 12.99,
+    "starRating": 4.0,
+    "imageUrl": "assets/images/pressure-washer.png",
+    "quantity": 0
+  },
+  {
+    "productId": 73,
+    "productName": "Lawn Sprinkler",
+    "productCode": "LS-0013",
+    "releaseDate": "20 August 2022",
+    "description": "Rotating adjustable lawn sprinkler",
+    "price": 24.99,
+    "starRating": 4.5,
+    "imageUrl": "assets/images/wheelbarrow.png",
+    "quantity": 0
+  },
+  {
+    "productId": 62,
+    "productName": "Compost Bin",
+    "productCode": "CB-0014",
+    "releaseDate": "14 September 2022",
+    "description": "Outdoor compost bin with aeration system",
+    "price": 45.99,
+    "starRating": 4.2,
+    "imageUrl": "assets/images/garden-hose.png",
+    "quantity": 0
+  },
+  {
+    "productId": 82,
+    "productName": "Pruning Shears",
+    "productCode": "PS-0015",
+    "releaseDate": "10 October 2022",
+    "description": "Heavy-duty garden pruning shears",
+    "price": 16.99,
+    "starRating": 4.7,
+    "imageUrl": "assets/images/garden-cart.png",
+    "quantity": 0
+  },
+  {
+    "productId": 50,
+    "productName": "Weed Puller",
+    "productCode": "WP-0016",
+    "releaseDate": "5 November 2022",
+    "description": "Long-handle weeding tool with ergonomic grip",
+    "price": 29.99,
+    "starRating": 4.3,
+    "imageUrl": "assets/images/hammer.png",
+    "quantity": 0
+  },
+  {
+    "productId": 74,
+    "productName": "Plant Stand",
+    "productCode": "PS-0017",
+    "releaseDate": "22 December 2022",
+    "description": "Adjustable metal plant stand for indoor and outdoor use",
+    "price": 39.99,
+    "starRating": 4.6,
+    "imageUrl": "assets/images/lawn-mower.png",
+    "quantity": 0
+  },
+  {
+    "productId": 54,
+    "productName": "Hand Trowel",
+    "productCode": "HT-0018",
+    "releaseDate": "18 January 2023",
+    "description": "Ergonomic stainless steel hand trowel",
+    "price": 12.49,
+    "starRating": 4.5,
+    "imageUrl": "assets/images/garden-shovel.png",
+    "quantity": 0
+  },
+  {
+    "productId": 82,
+    "productName": "Garden Gloves",
+    "productCode": "GG-0019",
+    "releaseDate": "10 February 2023",
+    "description": "Durable gardening gloves with grip",
+    "price": 9.99,
+    "starRating": 4.8,
+    "imageUrl": "assets/images/pressure-washer.png",
+    "quantity": 0
+  },
+  {
+    "productId": 22,
+    "productName": "Seed Starter Kit",
+    "productCode": "SSK-0020",
+    "releaseDate": "1 March 2023",
+    "description": "Biodegradable seed starter pots",
+    "price": 18.99,
+    "starRating": 4.4,
+    "imageUrl": "assets/images/wheelbarrow.png",
+    "quantity": 0
+  }
+]

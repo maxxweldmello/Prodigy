@@ -1,0 +1,42 @@
+<div class="container">
+<div class="card">
+    <div class="card-header">
+        {{ pageTitle }}
+    </div>
+    <div class="card-container">
+        <div class="row" *ngFor="let product of products">
+            <div class="col-md-6">
+                <img src="{{ product.imageUrl }}" width="200px">
+            </div>
+            <div class="col-md-4">
+                    <p><strong>Name:</strong> {{ product.productName }}</p>
+                    <p><strong>Description:</strong> {{ product.description }}</p>
+                    <p><strong>Code:</strong> {{ product.productCode | convertToSpaces: '-' }}</p>
+                    <p><strong>Available:</strong> {{ product.releaseDate | convertToDash: ' ' }}</p>
+                    <p>
+                        <strong>Rating:</strong><br>
+                        <code>Click on the Star Rating</code>
+                        <star [rating]='product.starRating' (click)="showStarRatingOverlay(product.productId, product.starRating)"></star>
+                    </p>        
+                    <p><strong>Price:</strong> {{ product.price | currency: 'INR' }}</p>
+            </div>
+            <div>
+                <button class="btn btn-outline-secondary" style="width: 80px;" (click)='onBack()'>
+                    <i class="fa fa-chevron-left"> Back</i>
+                </button>
+                <button class="btn btn-outline-primary" [routerLink]="['/products', product.productId, 'edit']">
+                    <i class="fa fa-pencil-square"> Edit</i>
+                </button>    
+            </div>
+
+            <div  *ngIf="starRatingVisible">
+                <div class="overlay">
+                    <button class="btn btn-danger show-star-button" (click)="hideStarRatingOverlay(product.productId)">X</button>
+                    <star class="overlay-star" [rating]='product.starRating'></star>
+                    <p class="overlay-star-rating">{{product.starRating}}</p>
+                  </div>                          
+            </div>
+        </div>
+    </div>
+</div>
+</div>

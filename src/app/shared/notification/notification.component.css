@@ -1,0 +1,23 @@
+.notification {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    width: 200px;
+    border: 1px solid black;
+    padding: 5px;
+    position: absolute;
+    top: 80px;
+    right: 10px;
+    z-index: 999;
+    border-radius: 5px;
+    background-color: white;
+  }
+  
+  .btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  

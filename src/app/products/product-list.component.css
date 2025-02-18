@@ -1,0 +1,51 @@
+.table img{
+    width: 68px;
+    position: relative;
+    left: 20px;
+}
+
+.top-table-header{
+    font-size: 18px;
+}
+
+.table td{
+    height: 100px;
+}
+
+.main-search-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-search{
+    border: 2px solid rgb(216, 216, 216);
+    border-radius: 20px;
+    margin: 0 10px;
+    padding: 5px 10px;
+    width: 50%;
+}
+
+.individual-searches{
+    max-width: 150px;
+    width: auto;
+}
+
+input{
+    border: 1px solid rgb(216, 216, 216);
+}
+
+select{
+    padding: 3px;
+    width: 50%;
+    border: 1px solid rgb(216, 216, 216);
+}
+
+.text-primary:hover {
+    text-decoration: underline;
+}
+
+
+.btn-outline-primary{
+    height: 35px;
+}

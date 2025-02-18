@@ -1,0 +1,133 @@
+<div class="card-body">
+    <div class="main-search-container">
+      <input class="main-search" type="text" [(ngModel)]="listFilter" placeholder="Search Products..." />
+  </div>
+  <p>Search Result: {{ listFilter }}</p>
+    <br><br>
+    <table class="table" *ngIf="products.length">
+      <thead>
+        <tr class="top-table-header">
+          <th>
+
+          </th>
+          <th>
+            Product ID
+          </th>
+          <th>
+            Product Image
+          </th>
+          <th>
+            Product Name
+          </th>
+          <th>
+            Available On
+          </th>
+          <th>
+            Product Price
+          </th>
+          <th>
+            5 Star Rating
+          </th>
+          <th>Quantity</th>
+          <th>Add to Cart</th>
+          <th>Edit Product</th>
+        </tr>
+        <tr>
+          <th>
+          </th>
+          <th>
+            <div>
+              <input class="individual-searches" type="search" [(ngModel)]="idFilter" placeholder="Search..." />
+            </div>
+          </th>
+          <th>
+            <button class="btn btn-outline-primary">Show/Hide</button>
+          </th>
+          <th>
+            <div>
+              <input class="individual-searches" type="search" [(ngModel)]="productNameFilter"
+                placeholder="Search..." />
+            </div>
+          </th>
+          <th>
+            <div>
+              <input class="individual-searches" type="search" [(ngModel)]="releaseDateFilter"
+                placeholder="Search..." />
+            </div>
+          </th>
+          <th>
+            <div>
+              <label>Between {{ priceFilterMin }} INR to {{ priceFilterMax }} INR</label><br>
+              <div class="range-inputs">
+                <div class="range-input">
+                  <label>Min Value:</label>
+                  <input type="range" min="0" max="500" [(ngModel)]="priceFilterMin" class="individual-searches" />
+                </div>
+                <div class="range-input">
+                  <label>Max Value:</label>
+                  <input type="range" min="0" max="500" [(ngModel)]="priceFilterMax" class="individual-searches" />
+                </div>
+              </div>
+            </div>
+          </th>
+          <th>
+            <div>
+              <div><code>Click on the stars to 👀</code></div>
+              <div>Rating Number: {{ ratingNumber? ratingNumber : 0 }}</div>
+              <select [(ngModel)]="ratingFilterRange">
+                <option value="">All</option>
+                <option value="1-2">1 to 2</option>
+                <option value="2-3">2 to 3</option>
+                <option value="3-4">3 to 4</option>
+                <option value="4-5">4 to 5</option>
+              </select>
+            </div>
+          </th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let product of filteredProducts; let i = index">
+          <td>
+            <code>
+            {{i + 1}}
+            </code>
+          </td>
+          <td>{{ product.productId }}</td>
+          <td>
+            <input type="checkbox" class="form-check-input" (click)="toggleImageById(product.productId)" checked />
+            <img *ngIf="!showImageById(product.productId)" [src]="product.imageUrl"
+              [title]="product.productName | uppercase" />
+          </td>
+          <td>
+            <a class="nav-link text-primary " [routerLink]="['/products', product.productId]">{{ product.productName
+              }}</a>
+          </td>
+          <td>{{ product.releaseDate | convertToDash: ' ' }}</td>
+          <td>{{ product.price | currency: 'INR' }}</td>
+          <td>
+            <star [rating]="product.starRating" (ratingClicked)="onRatingClicked($event)"></star>
+          </td>
+          <td>
+            <div class="number-container">
+              <quantity-control 
+              [quantity]="product.quantity" 
+              (quantityChange)="onQuantityChange(product.productId, $event)">
+            </quantity-control>
+            </div>            
+          </td>
+          <td>
+            <button class="btn btn-outline-success" [routerLink]="['/products', product.productId, 'edit']">
+              <i class="fa fa-cart-plus"> Add Product</i>
+            </button>
+          </td>
+          <td>
+            <button class="btn btn-outline-primary" [routerLink]="['/products', product.productId, 'edit']">
+              <i class="fa fa-pencil-square"> Edit</i>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

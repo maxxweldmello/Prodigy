@@ -1,0 +1,6 @@
+<div class="quantity-control">
+    <button (click)="decrease()" [disabled]="quantity <= 0">-</button>
+    <span>{{ quantity }}</span>
+    <button (click)="increase()">+</button>
+  </div>
+  

@@ -1,0 +1,51 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 65%;
+}
+
+
+.row {
+    margin: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    margin: 20px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.show-star-button{
+    position: absolute;
+    top: 10px;
+    right: 50px;
+}
+
+.overlay-star{
+    scale: 5.0;
+}
+
+.overlay-star-rating{
+    position: relative;
+    top: 100px;
+    font-size: 30px;
+}
